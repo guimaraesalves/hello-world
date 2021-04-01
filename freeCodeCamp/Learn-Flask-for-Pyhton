@@ -1,0 +1,32 @@
+O plano para este vídeo:
+
+- configurar e fluxo de trabalho
+
+	configurando nosso ambiente
+
+	* Instale Python 3.6+ e PIP
+	* Instale o virtualenv
+	* Crie nosso diretório de projeto
+	* Crie um ambiente virtual
+	* Instale os pacotes necessários
+		**pip3 install flask flask-sqlalchemy
+		
+		criar o app.py dentro do diretório raiz
+			
+			from flask import Flask, render_template
+
+			app = Flask(__name__)
+
+			@app.route('/')
+			def index():
+			    return "Hello, world!"
+			    
+			if __neme__ == "__main__":
+				app.run(debug=True)
+
+
+- Coloque o aplicativo básico em execução
+- Modelos e conteúdo estático
+- Configurando e usando banco de dados (SQLite)
+- Criar um aplicativo CRUD básico
+- Implantar no Heroku
